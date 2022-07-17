@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@200&family=Open+Sans:ital@1&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@200&family=Open+Sans:ital@1&family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+body
+{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav
+{
+    font-family: 'Ubuntu', sans-serif; 
+}
+nav ul 
+{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* height: 60px; */
+    height: 3.75rem;
+    background-color: black;
+    color: white;
+
+}
+nav ul li 
+{
+    /* padding: 0 12px; */
+    padding: 0 0.6rem;
+}
+.brand img 
+{
+    /* width: 50px; */
+    width: 3.1rem;
+    padding: 0 0.5rem;
+
+}
+.brand
+{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container
+{
+    min-height: 64vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    /* margin: 23px auto; */
+    margin: 1.4rem auto;
+    width: 70%;
+    border-radius: 12px;
+    /* padding: 34px; */
+    padding: 2.1rem;
+    background-image: url('static/erik-mclean-9y1cTVKe1IY-unsplash.jpg');
+    background-size: cover;
+}
+.bottom
+{
+    position: sticky;
+    /* height: 90px; */
+    height: 5.6rem;
+    background-color: black;
+    color: white;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons
+{
+    /* margin-top: 14px; */
+    margin-top: 0.87rem;
+}
+.icons i 
+{
+    cursor: pointer;
+}
+#myProgressBar
+{
+    width: 80vw;
+    cursor: pointer;
+ 
+}
+/* .Songlistcontainer
+{
+    margin-top: 74px;
+} */
+.songItem
+{
+  /* height: 50px; */
+  height:3.1rem;
+  display: flex;
+  background-color: white;
+  
+  color: black;
+  margin: 0.75rem 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+}
+.songItem img
+{
+    /* width: 43px; */
+    width: 2.6rem;
+    /* margin: 0 23px; */
+    margin: 0 1.4rem;
+    border-radius: 34px;
+}
+.timestamp
+{
+    /* margin: 0 23px; */
+    margin: 0 1.4rem;
+}
+.timestamp i 
+{
+    cursor: pointer;
+}
+.songinfo
+{
+    position: absolute;
+    left: 10vw;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    font-family: 'Varela Round', sans-serif; 
+}
+@media only screen and (max-width: 1200px)
+{
+    .container
+    {
+        min-height: 64vh;
+        background-color: black;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+        display: flex;
+        
+        justify-content: center;
+        /* align-items: center; */
+        /* margin: 23px auto; */
+        margin: 1.4rem auto;
+        margin-top:8vh;
+        width: 82%;
+        border-radius: 12px;
+        /* padding: 34px; */
+        padding: 2.1rem;
+        background-image: url('static/erik-mclean-9y1cTVKe1IY-unsplash.jpg');
+        background-size: cover;
+    }
+    .bottom
+{
+    position: sticky;
+    /* height: 90px; */
+    margin-top:16vh;
+    height: 5.6rem;
+    width: 100%;
+    overflow:scroll;
+    background-color: black;
+    color: white;
+    bottom:0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+}
+
+@media only screen and (max-width: 700px){
+
+
+    .container
+{
+    min-height: 64vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    justify-content: center;
+    /* margin: 23px auto; */
+    margin: 1.4rem auto;
+    width: 82%;
+    border-radius: 12px;
+    /* padding: 34px; */
+    padding: 2.1rem;
+    background-image: url('static/erik-mclean-9y1cTVKe1IY-unsplash.jpg');
+    background-size: cover;
+}
+.songItem
+{
+  /* height: 50px; */
+  height:7rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width:89%;
+  color: black;
+  margin: 0.75rem 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.bottom
+{
+    position: sticky;
+    /* height: 90px; */
+    height: 5.6rem;
+    width: 100%;
+    overflow:scroll;
+    background-color: black;
+    color: white;
+    bottom:0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.songinfo
+{
+    position: relative;
+    /* margin-right:10vw; */
+    
+     left: -6vw; 
+}
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* font-family: 'Varela Round', sans-serif; */
+/* font-family: 'Ubuntu', sans-serif; */
